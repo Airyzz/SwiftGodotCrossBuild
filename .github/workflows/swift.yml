@@ -35,4 +35,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: windows-build
-          path: .build/**/*.dll
+          path: |
+            .build/**/*.dll
+            .build/plugins/outputs/swiftgodot/SwiftGodot/CodeGeneratorPlugin/GeneratedSources/generated.swift
